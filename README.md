@@ -6,4 +6,4 @@ This Repo houses all the llm related stuff from basics to advance
 
 ## Projects
 
-- Social Media Management Agent: This uses constrained decoding as a key feature to test. This Agent manages the social media account.
+- Social Media Management Agent: This uses structured outputs. This Agent manages the social media account and addresses users queries and can open tickets.
