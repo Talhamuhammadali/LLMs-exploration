@@ -1,6 +1,6 @@
 """Models for """
 from pydantic import BaseModel
-from typing import Optional, Literal
+from typing import Optional, Literal, List
 
 class User(BaseModel):
     name: str
@@ -19,3 +19,12 @@ class Mention(BaseModel):
 
     # If a support ticket is needed
     support_ticket_description: Optional[str]
+
+class UserPost(BaseModel):
+    message: str
+class UserPostWithExtras(BaseModel):
+    user_mood: Literal["awful", "bad", "evil"]
+    product: Literal['app', 'website', 'not_applicable']
+    sentiment: Literal['positive', 'negative', 'neutral']
+    internal_monologue: List[str]
+    message: str
